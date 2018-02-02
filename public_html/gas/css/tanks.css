@@ -1,0 +1,280 @@
+body {
+	font-size: 15px;
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+}
+
+/*----------------------------------------------- summary_table css --------------------------------------------*/
+
+.sum_table {
+	margin: auto;
+	width:98%;
+	
+	-moz-border-radius-bottomleft:17px;
+	-webkit-border-bottom-left-radius:17px;
+	border-bottom-left-radius:17px;
+	
+	-moz-border-radius-bottomright:17px;
+	-webkit-border-bottom-right-radius:17px;
+	border-bottom-right-radius:17px;
+	
+	-moz-border-radius-topleft:17px;
+	-webkit-border-top-left-radius:17px;
+	border-top-left-radius:17px;
+}.sum_table table{
+    border-collapse: collapse;
+    border-spacing: 0;
+	width:100%;
+	margin:0px;padding:0px;
+}.sum_table tr:last-child td:last-child {
+	-moz-border-radius-bottomright:17px;
+	-webkit-border-bottom-right-radius:17px;
+	border-bottom-right-radius:17px;
+}
+.sum_table table tr:first-child th:first-child {
+	-moz-border-radius-topleft:17px;
+	-webkit-border-top-left-radius:17px;
+	border-top-left-radius:17px;
+}
+.sum_table table tr:first-child th:last-child {
+	-moz-border-radius-topright:17px;
+	-webkit-border-top-right-radius:17px;
+	border-top-right-radius:17px;
+}.sum_table tr:last-child td:first-child{
+	-moz-border-radius-bottomleft:17px;
+	-webkit-border-bottom-left-radius:17px;
+	border-bottom-left-radius:17px;
+}.sum_table tr:hover td{
+	
+}
+.sum_table tr:nth-child(odd){ background-color:#e8f8fc; }
+.sum_table tr:nth-child(even)    { background-color:#ffffff; }.sum_table td{
+	vertical-align:middle;
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	border:1px solid #05262e;
+	border-width:0px 1px 1px 0px;
+	text-align:center;
+	padding:15px;
+	font-size:13px;
+	font-weight:normal;
+	color:#000000;
+}.sum_table tr:last-child td{
+	border-width:0px 1px 0px 0px;
+}.sum_table tr td:last-child{
+	border-width:0px 0px 1px 0px;
+}.sum_table tr:last-child td:last-child{
+	border-width:0px 0px 0px 0px;
+}
+.sum_table tr:first-child th{
+	background:-o-linear-gradient(bottom, #37c5e9 5%, #05262e 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #37c5e9), color-stop(1, #05262e) );
+	background:-moz-linear-gradient( center top, #37c5e9 5%, #05262e 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#37c5e9", endColorstr="#05262e");	background: -o-linear-gradient(top,#37c5e9,7f241a);
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	background-color:#37c5e9;
+	border:0px solid #05262e;
+	text-align:center;
+	border-width:0px 0px 1px 0px;
+	font-size:20px;
+	font-weight:normal;
+	color:#ffffff;
+	padding:15px;
+}
+.sum_table tr:first-child:hover th{
+	background:-o-linear-gradient(bottom, #37c5e9 5%, #05262e 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #37c5e9), color-stop(1, #4330009) );
+	background:-moz-linear-gradient( center top, #37c5e9 5%, #05262e 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#37c5e9", endColorstr="#05262e");	background: -o-linear-gradient(top,#37c5e9,7f241a);
+	background-color:#37c5e9;
+}
+.sum_table tr:first-child th:first-child{
+	border-width:0px 0px 1px 0px;
+}
+.sum_table tr:first-child th:last-child{
+	border-width:0px 0px 1px 0px;
+}
+
+#tableForm{
+	position: relative;
+	margin-top: -70px;
+}
+
+@media screen and (max-width: 768px) and (min-width: 480px) {
+	.sum_table {
+		box-shadow: none;
+		border:none;
+	}
+	input[type="text"] {
+		font-size: 28px;
+		height: 50px;
+		top:25px;
+	}
+	input[type="text"]:focus {
+	  width: 320px;
+	}
+}
+
+@media screen and (max-width: 479px) {
+	.sum_table {
+		box-shadow: none;
+		border:none;
+	}
+	input[type="text"] {
+		font-size: 15px;
+		height: 50px;
+		top:25px;
+	}
+	input[type="text"]:focus {
+		width: 200px;
+	}
+}
+
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * DataTables features
+ */
+
+.dataTables_wrapper {
+	position: relative;
+	min-height: 302px;
+	_height: 302px;
+	clear: both;
+}
+
+.dataTables_processing {
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	width: 250px;
+	margin-left: -125px;
+	border: 1px solid #ddd;
+	text-align: center;
+	color: #999;
+	font-size: 11px;
+	padding: 2px 0;
+}
+
+.dataTables_length {
+	width: 40%;
+	float: left;
+}
+
+.dataTables_filter {
+	width: 50%;
+	float: right;
+	text-align: right;
+}
+
+.dataTables_info {
+	width: 60%;
+	float: left;
+}
+
+.dataTables_paginate {
+	width: 44px;
+	* width: 50px;
+	float: right;
+	text-align: right;
+}
+
+/* Pagination nested */
+.paginate_disabled_previous, .paginate_enabled_previous, .paginate_disabled_next, .paginate_enabled_next {
+	height: 19px;
+	width: 19px;
+	margin-left: 3px;
+	float: left;
+}
+
+.paginate_disabled_previous {
+	background-image: url('../images/back_disabled.png');
+	height:40px;
+}
+
+.paginate_enabled_previous {
+	background-image: url('../images/back_enabled.png');
+	height:40px;
+}
+
+.paginate_disabled_next {
+	background-image: url('../images/forward_disabled.png');
+	height:40px;
+}
+
+.paginate_enabled_next {
+	background-image: url('../images/forward_enabled.png');
+	height:40px;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * DataTables sorting
+ */
+
+.sorting_asc {
+	background: url('../images/sort_asc.jpg') no-repeat center right;
+}
+
+.sorting_desc {
+	background: url('../images/sort_desc.jpg') no-repeat center right;
+}
+
+.sorting {
+	background: url('../images/sort_both.jpg') no-repeat center right;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * Misc
+ */
+.top, .bottom {
+	padding: 15px;
+	background-color: #F5F5F5;
+	border: 1px solid #CCCCCC;
+}
+
+.top .dataTables_info {
+	float: none;
+}
+
+.clear {
+	clear: both;
+}
+
+tfoot input {
+	margin: 0.5em 0;
+	width: 100%;
+	color: #444;
+}
+
+tfoot input.search_init {
+	color: #999;
+}
+
+
+.example_alt_pagination div.dataTables_info {
+	width: 40%;
+}
+
+.example_alt_pagination .dataTables_paginate {
+	width: 400px;
+}
+
+.example_alt_pagination div.dataTables_paginate span.paginate_button,
+ 	.example_alt_pagination div.dataTables_paginate span.paginate_active {
+	border: 1px solid #aaa;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	padding: 2px 5px;
+	margin: 0 3px;
+	cursor: pointer;
+	*cursor: hand;
+}
+
+.example_alt_pagination div.dataTables_paginate span.paginate_button {
+	background-color: #ddd;
+}
+
+.example_alt_pagination div.dataTables_paginate span.paginate_button:hover {
+	background-color: #ccc;
+}
+
+.example_alt_pagination div.dataTables_paginate span.paginate_active {
+	background-color: #99B3FF;
+}
